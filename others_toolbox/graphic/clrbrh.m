@@ -1,0 +1,29 @@
+function [a]=clrbrh(ax,clip,pos,labelstr)
+%
+% a = clrbrh(ax,clip,pos);
+%
+clip = clip(:);
+a = axes('position',pos);
+surf(repmat([0 1],length(clip),1),repmat(clip,1,2),repmat(clip,1,2));
+shading flat;
+view(90,90)
+caxis([clip(1) clip(end)])
+set(a,'xlim',[0.1 0.9],'ylim',[clip(1) clip(end)],...
+      'xtick',[0 1],'xticklabel',[],'yaxislocation','right','box','on','xdir','rev')
+  
+map = get(gcf,'colormap');
+grid off
+colormap(map)
+freezeColors
+b = axes('position',get(a,'position'),...
+         'xtick',get(a,'xtick'),...
+         'xlim',get(a,'xlim'),...
+         'xticklabel',[],...
+         'ytick',get(a,'ytick'),...
+         'ylim',get(a,'ylim'),...
+         'yticklabel',[],...
+         'fontsize',10,...
+         'color','none','box','on');
+xlabel(labelstr)    
+set(gcf,'currentaxes',ax);
+										   
