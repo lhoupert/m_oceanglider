@@ -1,7 +1,7 @@
 # README #
 
 ### News ###
-*25/08/2020: Move from Bitbucket*
+*25/08/2020: Moved repository from Bitbucket*
 
 *31/05/2016: biogeochemical variables (Chl-a, dissolved oxygen, CDOM, Backscatter) incorporated in the processing*
 
@@ -53,7 +53,7 @@ Just drop me an email so I can give you rights to read and write.
 
 ### Who do I talk to? ###
 
-For questions or comments, please contact Loïc Houpert (loic.houpert at sams.ac.uk)
+For questions or comments, please contact Loïc Houpert
 
 ### Licensing ###
 The code developed in the directory *glider_toolbox/process* are in the directory *others_toolbox/perso* are licensed under the terms of the GNU General Public License v3.0. The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license.
